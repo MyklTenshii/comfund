@@ -63,7 +63,6 @@ nav{
 }
 
 a{
-    position: relative;
     color: rgb(102, 57, 57);
     font-size: 14px;
     display: table;
@@ -71,7 +70,8 @@ a{
     padding: 10px;
 }
 
-.fa-brands{
+
+.fa-instagram{
     position: relative;
     width: 70px;
     height: 40px;
@@ -79,11 +79,31 @@ a{
     font-size: 25px;
     text-align: center;
 }
-.one{
+.fa-x-twitter{
     position: relative;
-    top: 12px;
-    margin-left: 10px;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 25px;
+    text-align: center;
 }
+.fa-facebook{
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 25px;
+    text-align: center;
+}
+.fa-github{
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 25px;
+    text-align: center;
+}
+
 
 .nav-item{
     position: relative;
@@ -108,9 +128,13 @@ main{
 }
 @media only screen and (max-width: 768px) {
     main{
-        margin-left: 3rem;
-        padding: 1rem;
+        margin-left: 0.5rem;
+        padding: .5rem;
+
 }
+ nav {
+    display: none;
+ }
 }
 main img{
     width: 100%;
@@ -162,11 +186,11 @@ color: black;
 }
 @media only screen and (max-width: 768px) {
     .container{
-        width: 100%;
-        background: #b7e8ee00;
+        width: 95%;
+        background: #30a85433;
         grid-template-columns: 1fr;
-        padding: 3rem;
-        gap: 7rem;
+        padding: 1rem;
+        gap: 3rem;
     }
     .profile-img{
         width: 50%;
@@ -273,7 +297,9 @@ color: black;
     gap: 1rem;
     color: var(--secondary-color);
  }
- 
+ .socials{
+    display: none;
+ }
  hr{
     grid-column: 1/-1;
     width: 80%;
@@ -283,13 +309,70 @@ color: black;
     border: none;
     border-top: 3px solid rgba(144, 224, 158, 0.229);
  }
- .social-items {
+ @media only screen and (max-width: 768px) {
+ .eula {
     display: flex;
     width: 125px;
     height: 125px;
+    padding: 1rem;
  }
+}
+
  @media only screen and (max-width: 768px) {
     hr{
         margin: 0 auto;
     }
+    .eula {
+        display: none;
+        width: 120px;
+        height: 120px;
+        margin-bottom: 1rem;
  }
+}
+
+
+.middle {
+    position: absolute;
+    top: 2445px;
+    left: 0.5rem;
+    transform: translateY(-80%);
+    width: 100%;
+    text-align: center;
+}
+.btn {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: #f1f1f1;
+    margin: 10px;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #00000070;
+    color: #0d784f;
+    overflow: hidden;
+    position: relative;
+}
+.btn i {
+    line-height: 30px;
+    font-size: 26px;
+    transition: 0.2s linear;
+}
+.btn:hover i {
+    transform: scale(1.3);
+    color: #f1f1f1;
+}
+.btn::before{
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #102f15;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+}
+.btn:hover::before{
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left:-10%;
+}
+
