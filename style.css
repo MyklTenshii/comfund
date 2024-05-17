@@ -164,6 +164,13 @@ a{
         width: 100%;
         padding: 10px;
     }
+    .nav2 .pic2{
+        color: rgb(255, 255, 255);
+        font-size: 14px;
+        display: table;
+        width: 10px;
+        padding: 10px;
+    }
     
     
     .fa-instagram{
