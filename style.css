@@ -30,7 +30,7 @@ body{
     background-size: cover;
 }
 
-nav{
+.nav1 {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -104,22 +104,114 @@ a{
     text-align: center;
 }
 
-
+.nav2 {
+    display: none;
+}
 .nav-item{
     position: relative;
     top: 12px;
     margin-left: 10px;
 }
-a:hover{
+.nav1 a:hover{
     background: #eee;
 }
-nav:hover{
+.nav1:hover{
     width: 280px;
     transition: all 0.5s ease;
 }
 
 
 
+
+
+@media only screen and (max-width: 768px) {
+    .nav2 {
+        display: inline;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        height: 75px;
+        left: 0;
+        background: #3c683756;
+        width: 100%;
+        overflow: hidden;
+        transition: height 0.2s linear;
+        box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    }
+    
+    .pic2{
+        text-align: start;
+        display: flex;
+        transition: all 0.5s ease;
+        margin: 4px 0 0 4px;
+    }
+    .pic2 img{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+    }
+    
+    .pic2 span{
+        font-weight: bold;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+    
+    .nav2 a{
+        color: rgb(255, 255, 255);
+        font-size: 14px;
+        display: table;
+        width: 100%;
+        padding: 10px;
+    }
+    
+    
+    .fa-instagram{
+        position: relative;
+        width: 70px;
+        height: 40px;
+        top: 14px;
+        font-size: 25px;
+        text-align: center;
+    }
+    .fa-x-twitter{
+        position: relative;
+        width: 70px;
+        height: 40px;
+        top: 14px;
+        font-size: 25px;
+        text-align: center;
+    }
+    .fa-facebook{
+        position: relative;
+        width: 70px;
+        height: 40px;
+        top: 14px;
+        font-size: 25px;
+        text-align: center;
+    }
+    .fa-github{
+        position: relative;
+        width: 70px;
+        height: 40px;
+        top: 14px;
+        font-size: 25px;
+        text-align: center;
+    }
+    
+    .nav-item2{
+        position: relative;
+        top: 12px;
+        margin-left: 10px;
+    }
+    a:hover{
+        background: #203b1d56;
+    }
+    .nav2:hover{
+        height: 325px;
+        transition: all 0.5s ease;
+    }
+}
 
 
 main{
@@ -132,10 +224,20 @@ main{
         padding: .5rem;
 
 }
- nav {
+.nav1,
+.nav-item,
+.pic img,
+.pic span {
     display: none;
  }
+ .nav1 a:hover{
+    display: none;
 }
+.nav1:hover{
+display: none;
+}
+}
+
 main img{
     width: 100%;
     border-radius: 50%;
